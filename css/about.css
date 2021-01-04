@@ -1,0 +1,120 @@
+/* COMMENT OUT ALL COMMENTS FOR PUBLICATION */
+/* A COMMENT IS FOR TESTING PURPOSES */
+
+/* ↓ REMOVE IF NOT 000WEBHOST ↓ */
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+  display: none;
+}
+/*  ↑ REMOVE IF NOT 000WEBHOST ↑  */
+
+html {
+  background-color: grey;
+}
+
+body {
+  font-family: "Comic Sans MS";
+  color: white;
+  background-color: none;
+  padding-top: 0px;
+  margin: 0%;
+  font-size: 25px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  margin-top: 0px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.aqua {
+  color: aqua;
+}
+
+.main {
+  position: relative;
+  text-align: left;
+  padding-top: 1%;
+  margin-top: 0px;
+  padding-bottom: 5%;
+  align-self: center;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+}
+
+.secondary {
+  position: relative;
+  text-align: left;
+  padding-top: 1%;
+  margin-top: 0px;
+  padding-bottom: 5%;
+  align-self: center;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.red_block {
+  background-color: rgb(119, 0, 0);
+}
+
+.blue_block {
+  background-color: royalblue;
+  padding-bottom: 7vmax;
+}
+
+img {
+  position: relative;
+  max-width: 10vmax;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5%;
+}
+
+span {
+  padding-right: 5px;
+  font-size: 30px;
+}
+
+.centre {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
