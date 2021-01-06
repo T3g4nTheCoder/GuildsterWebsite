@@ -1,14 +1,6 @@
-/* COMMENT OUT ALL COMMENTS FOR PUBLICATION */
-/* A COMMENT IS FOR TESTING PURPOSES */
-
-/* ↓ REMOVE IF NOT 000WEBHOST ↓ */
-img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
-  display: none;
-}
-/*  ↑ REMOVE IF NOT 000WEBHOST ↑  */
-
 html {
-  background-color: grey;
+  background-color: rgb(119, 0, 0);
+  color: white;
 }
 
 body {
@@ -16,8 +8,9 @@ body {
   color: white;
   background-color: none;
   padding-top: 0px;
-  margin: 0%;
-  font-size: 25px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -27,94 +20,45 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-h1 {
-  margin-top: 0px;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
 .aqua {
   color: aqua;
 }
 
-.main {
-  position: relative;
-  text-align: left;
-  padding-top: 1%;
-  margin-top: 0px;
-  padding-bottom: 5%;
-  align-self: center;
-  padding-right: 5%;
-  padding-left: 5%;
-  font-size: 25px;
+.header {
+  text-align: center;
+  width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-  .main {
-    font-size: 20px;
-  }
-
-  body {
-    font-size: 20px;
-  }
+.main_block {
+  width: 98%;
+  margin: auto;
+  font-size: large;
 }
 
-.secondary {
-  position: relative;
-  text-align: left;
-  padding-top: 1%;
-  margin-top: 0px;
-  padding-bottom: 5%;
-  align-self: center;
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-.red_block {
-  background-color: rgb(119, 0, 0);
-}
-
-.blue_block {
-  background-color: royalblue;
-  padding-bottom: 7vmax;
+.spacer {
+  height: 20px;
 }
 
 img {
-  position: relative;
-  max-width: 10vmax;
+  max-width: 15%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.team {
+  background-color: royalblue;
+  width: 100%;
+  vertical-align: top;
   display: inline-block;
-  vertical-align: middle;
-  padding-right: 5%;
+  text-align: center;
+}
+
+.spacer.blue {
+  padding-bottom: 5px;
 }
 
 span {
-  padding-right: 5px;
-  font-size: 30px;
-}
-
-.centre {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: grey;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-}
-
-.navbar a {
-  float: left;
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  cursor: pointer;
+  font-size: 30px;
+  padding-bottom: 10px;
 }

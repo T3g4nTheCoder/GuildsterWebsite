@@ -1,0 +1,67 @@
+/* -----------Setup----------- */
+
+html {
+  background-image: url("../images/sick-bg.svg");
+  font-family: "Comic Sans MS";
+  background-color: grey;
+  background-repeat: repeat;
+  background-size: cover;
+  /* ---- */
+  color: white;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* ---- */
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------------------------- */
+
+.top {
+  display: flex;
+  width: 100%;
+}
+
+.top h1 {
+  position: absolute;
+  padding-left: 20px;
+  top: 250px;
+  transform: translateY(-50%);
+}
+
+.top a {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .top h1 {
+    position: relative;
+    left: 50%;
+    top: 0;
+    font-size: 20px;
+    transform: translateX(-50%) translateY(0px);
+  }
+
+  .top a {
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.bottom {
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  height: 50PX;
+}
