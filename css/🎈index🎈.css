@@ -12,6 +12,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  font-weight: 900;
   height: 100%;
   overflow: scroll;
   -ms-overflow-style: none;
@@ -52,7 +53,7 @@ h1 {
 
 .large {
   font-size: 2.7vmax;
-  width: 80%;
+  width: 90%;
 }
 
 div {
@@ -65,11 +66,6 @@ div {
   top: 30%;
 }
 
-.belowcentre {
-  position: absolute;
-  top: 50%;
-}
-
 .text {
   width: 100%;
   font-size: 15px;
@@ -77,16 +73,12 @@ div {
   color: rgb(215, 89, 89);
 }
 
-.some {
-  color: rgb(215, 0, 89);
-}
-
 .buttons {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40%;
   display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
   bottom: 30%;
 }
 
@@ -98,4 +90,22 @@ div {
 .buttons li {
   flex: 1;
   list-style: none;
+  border: 0.3vh solid #F85A38;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 1280px) {
+  .buttons li {
+    padding: 10px;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buttons li {
+    border: 2px solid #F85A38;
+    border-radius: 3px;
+  }
 }
