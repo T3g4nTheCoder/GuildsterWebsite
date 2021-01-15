@@ -5,6 +5,13 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 }
 /*  ↑ REMOVE IF NOT 000WEBHOST ↑  */
 
+@media screen and (max-width: 300px) {
+  .buttons {
+    flex-direction: column;
+    top: 70%;
+  }
+}
+
 html {
   font-family: "Comic Sans MS";
   background-image: url("../images/sick-bg-2.svg");
@@ -14,7 +21,7 @@ html {
   color: white;
   font-weight: 900;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -68,7 +75,7 @@ div {
 
 .text {
   width: 100%;
-  font-size: 15px;
+  font-size: 2.5vh;
   line-height: 20px;
   color: rgb(215, 89, 89);
 }
@@ -90,7 +97,7 @@ div {
 .buttons li {
   flex: 1;
   list-style: none;
-  border: 0.3vh solid #F85A38;
+  border: 0.3vh solid #f85a38;
   margin: 2px;
   padding: 2px;
   border-radius: 3px;
@@ -105,7 +112,7 @@ div {
 
 @media screen and (max-width: 600px) {
   .buttons li {
-    border: 2px solid #F85A38;
+    border: 2px solid #f85a38;
     border-radius: 3px;
   }
 }

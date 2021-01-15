@@ -7,68 +7,73 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 
 /* -----------Setup----------- */
 
+@media screen and (max-height: 500px) {}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
-  background-image: url("../images/sick-bg.svg");
   font-family: "Comic Sans MS";
+  background-image: linear-gradient(0deg, blue, red);
+  background-image: -webkit-linear-gradient(0deg, blue, red);
+  background-image: -o-linear-gradient(0deg, blue, red);
+  background-image: -moz-linear-gradient(0deg, blue, red);
   background-color: grey;
   background-repeat: repeat;
   background-size: cover;
   /* ---- */
   color: white;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  overflow: auto;
+  overflow-x: hidden;
   /* ---- */
-  margin: 0;
-  padding: 0;
 }
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
 /* ---------------------------- */
 
-.top {
-  display: flex;
+.dsc {
   width: 100%;
 }
 
-.top h1 {
+.dsc-logo {
+  max-width: 30rem;
   position: absolute;
-  padding-left: 20px;
-  top: 250px;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%);
+  top: 30%;
 }
 
-.top a {
+.dsc-btn {
+
+  padding: 10px;
+  background-color: #7289DA;
+  border: none;
+  border-radius: 3px;
+  width: 50%;
+  color: white;
+  font-weight: 100;
+  font-size: 1.5rem;
+  cursor: pointer;
+
   position: absolute;
-  right: 0;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%);
 }
 
-@media screen and (max-width: 920px) {
-  .top h1 {
-    position: relative;
-    left: 50%;
-    top: 0;
-    font-size: 20px;
-    transform: translateX(-50%) translateY(0px);
-  }
-
-  .top a {
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-.bottom {
+.second {
+  position: absolute;
+  top: 100%;
   width: 100%;
-  background-color: grey;
+  height: 20rem;
+  background-color: royalblue;
+  padding: 10px;
+}
+
+.second h1 {
   text-align: center;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  height: 50PX;
+}
+
+.second-btn {
+  color: red;
 }

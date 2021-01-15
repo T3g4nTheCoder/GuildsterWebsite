@@ -9,14 +9,19 @@
       media="screen"
       href="./css/contact.css"
     />
+    <script src="./js/contact.js" defer></script>
     <title>Guildster Contact</title>
   </head>
   <body>
-    <div class="top">
-      <h1>Join my <a href="/discord.html">Discord Server!</a></h1>
-        <a href="https://discord.gg/yVVDJfM">Discord Link</a>
-    </div>
-    <div class="bottom">
+    <div class="all">
+      <div class="dcs">
+        <img src="./images/discord.svg" class="dsc-logo" alt="discord logo" />
+        <button class="dsc-btn" onclick="dscClick()">Discord Server</button>
+      </div>
+      <div class="second">
+        <h1>Want to contact me another way?</h1>
+        <button class="second-btn" onclick="scdClick()">Email Me!</button>
+      </div>
     </div>
   </body>
 </html>

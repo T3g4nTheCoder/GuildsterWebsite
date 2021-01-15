@@ -7,7 +7,6 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 
 html {
   background-color: rgb(119, 0, 0);
-  color: white;
 }
 
 body {
@@ -16,9 +15,7 @@ body {
   background-color: none;
   padding-top: 0px;
   margin: 0px;
-  height: 100%;
-  width: 100%;
-  overflow: scroll;
+  overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -39,7 +36,7 @@ body::-webkit-scrollbar {
 .main_block {
   width: 98%;
   margin: auto;
-  font-size: large;
+  font-size: 30px;
 }
 
 .spacer {
@@ -61,11 +58,34 @@ img {
 }
 
 .spacer.blue {
-  padding-bottom: 5px;
+  padding-bottom: 10%;
 }
 
 span {
   display: block;
   font-size: 30px;
   padding-bottom: 10px;
+}
+
+.bottom {
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+}
+
+.bottom li {
+  list-style: none;
+  flex: 1;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+.bottom a {
+  color: white;
 }
